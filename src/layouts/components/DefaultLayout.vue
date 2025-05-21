@@ -7,7 +7,6 @@ import newFooter from '@/layouts/components/NavFooter.vue';
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue';
 import NavbarSearch from '@/layouts/components/NavbarSearch.vue';
 import ChainProfile from '@/layouts/components/ChainProfile.vue';
-import Sponsors from '@/layouts/components/Sponsors.vue';
 
 import { NetworkType, useDashboard } from '@/stores/useDashboard';
 import { useBaseStore, useBlockchain } from '@/stores';
@@ -81,9 +80,9 @@ dayjs()
     >
       <div class="flex justify-between mt-1 pl-4 py-4 mb-1">
         <RouterLink to="/" class="flex items-center">
-          <img class="w-10 h-10" src="../../assets/logo.svg" />
-          <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white">
-            Ping.pub
+          <img class="w-10 h-10" src="../../assets/circle-removebg-preview.png" />
+          <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white" style="color: #ffd700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            shachopra
           </h1>
         </RouterLink>
         <div
@@ -252,53 +251,37 @@ dayjs()
           <RouterLink to="/wallet/suggest"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
           >
-            <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
+            <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2 text-yellow-500" />
             <div
               class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
             >
               Wallet Helper
             </div>
           </RouterLink>
-          <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
-          {{ $t('module.sponsors') }}
-        </div>
-        <Sponsors />
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">{{ $t('module.links') }}</div>
         <a
-          href="https://twitter.com/ping_pub"
+          href="https://x.com/shachopra"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-          <Icon icon="mdi:twitter" class="text-xl mr-2" />
+          <Icon icon="mdi:twitter" class="text-xl mr-2 text-yellow-500" />
           <div
             class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
             Twitter
           </div>
         </a>
+
         <a
-          v-if="showDiscord"
-          href="https://discord.com/invite/CmjYVSr6GW"
+          href="https://github.com/shachopra-ai"
           target="_blank"
-          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-          <Icon icon="mdi:discord" class="text-xl mr-2" />
+          <Icon icon="mdi:github" class="text-xl mr-2 text-yellow-500" />
           <div
             class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Discord
-          </div>
-        </a>
-        <a
-          href="https://github.com/ping-pub/explorer/discussions"
-          target="_blank"
-          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            FAQ
+            shachopra Github
           </div>
         </a>
       </div>
